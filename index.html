@@ -10,19 +10,20 @@
       background-color: #f7f7f7;
     }
     .maintenance-container {
-      width: 60%;
+      width: 80%;
+      max-width: 500px; /* Limit the maximum width to 500px */
       margin: 100px auto;
       text-align: center;
       color: #555;
     }
     h1 {
-      font-size: 72px;
+      font-size: 48px; /* Reduce the font size for smaller screens */
       margin-top: 0;
       margin-bottom: 30px;
     }
     p {
-      font-size: 24px;
-      margin-bottom: 50px;
+      font-size: 18px; /* Reduce the font size for smaller screens */
+      margin-bottom: 30px;
     }
     .btn {
       font-size: 18px;
@@ -30,7 +31,20 @@
     }
     .maintenance-image {
       max-width: 100%;
-      margin-bottom: 50px;
+      margin-bottom: 30px; /* Reduce the margin for smaller screens */
+    }
+
+    /* Media query for small screens */
+    @media (max-width: 768px) {
+      .maintenance-container {
+        width: 90%;
+      }
+      h1 {
+        font-size: 36px;
+      }
+      p {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
