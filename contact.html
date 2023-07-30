@@ -4,10 +4,22 @@
     <title>Contact Me</title>
     <!-- Add Bootstrap CSS link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add custom CSS for responsiveness -->
+    <style>
+        body {
+            padding-top: 50px;
+        }
+
+        @media (max-width: 576px) {
+            body {
+                padding-top: 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container mt-5">
-        <h1>Contact Me</h1>
+    <div class="container">
+        <h1 class="mt-5">Contact Me</h1>
         <p>If you have any questions or inquiries, feel free to get in touch with me using the form below:</p>
 
         <form action="submit_form.php" method="post">
@@ -32,6 +44,7 @@
 
     <!-- Add Bootstrap JS and Popper.js script links (needed for certain Bootstrap components) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- responsive -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
